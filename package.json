@@ -1,0 +1,31 @@
+{
+  "name": "mvp-stater-kit",
+  "scripts": {
+    "start": "node server/index.js",
+    "start:client": "webpack --mode development --watch",
+    "build:client": "NODE_ENV=production webpack --mode production",
+    "lint": "eslint . --ext .js,.jsx"
+  },
+  "author": "Beth Johnson",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.1",
+    "express": "^4.16.4",
+    "mysql": "^2.13.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  }
+}
