@@ -1,39 +1,37 @@
+// import React, { useState, useEffect } from 'react';
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
+// import { getItems } from '../services/items';
+// import List from './List.jsx';
+import Row from './Row.jsx';
+import requests from '../services/requests';
 
-import { getItems } from '../services/items';
-import List from './List.jsx';
+function App() {
+  // const [items, setItems] = useState([]);
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      items: [],
-    };
-  }
+  // useEffect(() => {
+  //   getItems(axios)
+  //     .then((newItems) => {
+  //       setItems({
+  //         newItems,
+  //       });
+  //     })
+  //     .catch((err) => {
+  //       console.error('Failed to get items!', err);
+  //     });
+  // }, []);
 
-  componentDidMount() {
-    getItems(axios)
-      .then((items) => {
-        this.setState({
-          items,
-        });
-      })
-      .catch((err) => {
-        console.error('Failed to get items!', err);
-      });
-  }
-
-  render() {
-    const { items } = this.state;
-
-    return (
-      <div>
-        <h1>Item List</h1>
-        <List items={items} />
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <h1>Netflix</h1>
+      <Row
+        title="NETFLIX ORIGINALS"
+        fetchUrl={requests.fetchNetflixOriginals}
+      />
+      <Row title="TRENDING NOW" fetchUrl={requests.fetchTrending} />
+      {/* <List items={items} /> */}
+    </div>
+  );
 }
 
 export default App;
