@@ -1,31 +1,31 @@
 {
-  "name": "mvp-stater-kit",
+  "name": "netflix-clone",
   "scripts": {
     "start": "node server/index.js",
     "start:client": "webpack --mode development --watch",
     "build:client": "NODE_ENV=production webpack --mode production",
     "lint": "eslint . --ext .js,.jsx"
   },
-  "author": "Beth Johnson",
+  "author": "Evan Taft",
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.8.7",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "eslint": "^5.15.3",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "babel-loader": "^9.1.3",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "webpack": "^5.90.2",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "axios": "^0.18.1",
-    "express": "^4.16.4",
-    "mysql": "^2.13.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "axios": "^1.6.7",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
