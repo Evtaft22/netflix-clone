@@ -1,7 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const ListItem = ({ item }) => <li>{item.description}</li>;
+function ListItem({ item }) {
+  return <li>{item.description}</li>;
+}
 
 ListItem.propTypes = {
   item: PropTypes.shape({

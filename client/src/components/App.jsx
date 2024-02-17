@@ -1,8 +1,8 @@
-import React from "react";
-import axios from "axios";
+import React from 'react';
+import axios from 'axios';
 
-import { getItems } from "../services/items";
-import List from "./List.jsx";
+import { getItems } from '../services/items';
+import List from './List.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class App extends React.Component {
         });
       })
       .catch((err) => {
-        console.error("Failed to get items!", err);
+        console.error('Failed to get items!', err);
       });
   }
 
