@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "start:client": "webpack --mode development --watch",
-    "build:client": "NODE_ENV=production webpack --mode production",
+    "build": "NODE_ENV=production webpack --mode production",
     "lint": "eslint . --ext .js,.jsx"
   },
   "author": "Evan Taft",
@@ -14,11 +14,13 @@
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-react": "^7.23.3",
     "babel-loader": "^9.1.3",
+    "css-loader": "^6.10.0",
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
+    "style-loader": "^3.3.4",
     "webpack": "^5.90.2",
     "webpack-cli": "^5.1.4"
   },
