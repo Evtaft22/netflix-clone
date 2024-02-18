@@ -5,6 +5,7 @@ import '../styles/App.css';
 // import { getItems } from '../services/items';
 // import List from './List.jsx';
 import Row from './Row.jsx';
+import Banner from './Banner.jsx';
 import requests from '../services/requests';
 
 function App() {
@@ -23,11 +24,14 @@ function App() {
   // }, []);
 
   return (
-    <div className="App">
+    <div className="app">
       <h1>Netflix</h1>
+      {/* Navbar */}
+      <Banner />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
       />
       <Row title="TRENDING NOW" fetchUrl={requests.fetchTrending} />
       <Row title="TOP RATED" fetchUrl={requests.fetchTopRated} />
