@@ -1,6 +1,7 @@
 // import React, { useState, useEffect } from 'react';
 import React from 'react';
 // import axios from 'axios';
+import '../styles/App.css';
 // import { getItems } from '../services/items';
 // import List from './List.jsx';
 import Row from './Row.jsx';
@@ -29,6 +30,12 @@ function App() {
         fetchUrl={requests.fetchNetflixOriginals}
       />
       <Row title="TRENDING NOW" fetchUrl={requests.fetchTrending} />
+      <Row title="TOP RATED" fetchUrl={requests.fetchTopRated} />
+      <Row title="ACTION" fetchUrl={requests.fetchActionMovies} />
+      <Row title="COMEDY" fetchUrl={requests.fetchComedyMovies} />
+      <Row title="HORROR" fetchUrl={requests.fetchHorrorMovies} />
+      <Row title="ROMANCE" fetchUrl={requests.fetchRomanceMovies} />
+      <Row title="DOCUMENTARIES" fetchUrl={requests.fetchDocumentaries} />
       {/* <List items={items} /> */}
     </div>
   );
