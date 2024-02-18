@@ -6,6 +6,7 @@ import '../styles/App.css';
 // import List from './List.jsx';
 import Row from './Row.jsx';
 import Banner from './Banner.jsx';
+import Nav from './Nav.jsx';
 import requests from '../services/requests';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
   return (
     <div className="app">
       <h1>Netflix</h1>
-      {/* Navbar */}
+      <Nav />
       <Banner />
       <Row
         title="NETFLIX ORIGINALS"
