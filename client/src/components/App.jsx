@@ -26,7 +26,6 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Netflix</h1>
       <Nav />
       <Banner />
       <Row
